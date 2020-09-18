@@ -1,0 +1,18 @@
+thead
+{
+    background-color: #9a9daf;
+    width: 380px;
+}
+tbody
+{
+    background-color: #d1d2da;
+   
+}
+table.a
+{
+    table-layout: auto;
+    width: 680px;
+    height: 100px;  
+    margin-left: 0px;
+    margin-top: 30px;
+}

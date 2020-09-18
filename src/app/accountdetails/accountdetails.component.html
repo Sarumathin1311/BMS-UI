@@ -1,0 +1,24 @@
+<div class="container">
+    <h2> Account details</h2>
+    <table class="a">
+        <thead>
+            <tr>
+                <th>AccountNo</th>
+                <th>IFSC</th>
+                <th>Bank Name</th>
+                <th>MICR Code</th>
+                <th>PAN No</th>
+            </tr>
+        </thead>
+        <tbody>
+           <tr *ngFor =" let account of account">
+               <td>{{account.accountNo}}</td>
+               <td>{{account.ifsc}}</td>
+               <td>{{account.bankName}}</td>
+               <td>{{account.micrCode}}</td>
+               <td>{{username}}</td>
+                
+            </tr>
+       </tbody>
+    </table>
+</div>
