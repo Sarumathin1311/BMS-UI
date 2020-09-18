@@ -1,0 +1,38 @@
+<div class="card">
+  <h3 class="card-header">Enter your Details</h3>
+
+      <form name="userForm" [formGroup]="userForm" (ngSubmit)="userForm.valid && onSubmit()" class="text-center border border-light p-5">
+        
+          <div class="col">
+              <input  type="accountNo" formControlName = "accountNo"  class="form-control"  required maxlength="10" id="accountNo" autocomplete="off" placeholder="Account No">
+              <div class="alert alert-danger" style="color:red" *ngIf="userForm.controls['accountNo'].hasError('required') && userForm.controls['accountNo'].touched">Account No required</div>
+              <div class="alert alert-danger" style="color:red" *ngIf="userForm.controls['accountNo'].hasError('pattern') && userForm.controls['accountNo'].touched">Invalid Account No</div>
+            </div>&nbsp;
+            	
+          
+          <div class="col">
+              <input  type="ifsc" formControlName = "ifsc" class="form-control" id="ifsc" autocomplete="off" placeholder="IFSC Code">
+              <div class="alert alert-danger" style="color:red" *ngIf="userForm.controls['ifsc'].hasError('required') && userForm.controls['ifsc'].touched">IFSC Code required</div>
+          </div>&nbsp;
+        
+          <div class="col">
+              <input type="bankName" formControlName = "bankName" class="form-control"  id="bankName" autocomplete="off" placeholder="Bank Name">
+              <div class="alert alert-danger" style="color:red" *ngIf="userForm.controls['bankName'].hasError('required') && userForm.controls['bankName'].touched">Bank Name required</div>
+          </div>&nbsp;
+
+          <div class="col">
+              <input  type="micrCode"  formControlName = "micrCode" class="form-control" id="micrCode" autocomplete="off" placeholder="MICR Code">
+              <div class="alert alert-danger" style="color:red" *ngIf="userForm.controls['micrCode'].hasError('required') && userForm.controls['micrCode'].touched">MICR Code required</div>
+          </div>&nbsp;
+
+          <div class="col">
+              <input  type="panNo" formControlName = "panNo"  class="form-control"  id="panNo" autocomplete="off" placeholder="PAN No">
+              <div class="alert alert-danger" style="color:red" *ngIf="userForm.controls['panNo'].hasError('required') && userForm.controls['panNo'].touched">PAN No required</div>
+         
+          <div class="btn-group">  
+      <button class="btn btn-primary submitbtn" type="submit">Submit</button></div>&nbsp;	
+        <div class="btn-group">
+        <a routerLink="/home/bankaccount/accountdetails" routerLinkActive="active" class="btn btn-primary viewaccountbtn">View Account</a>
+        </div>
+        
+        <router-outlet></router-outlet>
