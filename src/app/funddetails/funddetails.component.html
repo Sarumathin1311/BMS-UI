@@ -1,0 +1,24 @@
+
+<div class="container">
+  <h3> Mutual Fund Details</h3>
+  <table class="a">
+      <thead>
+          <tr>
+              <th>Fund ID</th>
+              <th>Fund Name</th>
+              <th>Amount</th>
+              <th>PAN No</th>
+             
+          </tr>
+      </thead>
+      <tbody>
+         <tr *ngFor =" let mutualfund of mutualfund">
+             <td>{{mutualfund.fundId}}</td>
+             <td>{{mutualfund.fundName|titlecase}}</td>
+             <td>{{mutualfund.amount|number:'1.2-2'}}</td>
+             <td>{{username}}</td>
+              
+          </tr>
+     </tbody>
+  </table>
+</div>

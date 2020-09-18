@@ -1,0 +1,17 @@
+thead
+{
+    background-color: #9a9daf;
+    width: 380px;
+}
+tbody
+{
+    background-color: #d1d2da;
+    width: 380px; 
+}
+table.a
+{
+   
+    width: 780px;
+    height: 100px;  
+    margin-top: 30px; 
+}
