@@ -1,0 +1,10 @@
+.col{
+  width: 500px;
+}
+
+.card{
+  background-color: rgb(224, 227, 228);
+}
+.alert alert-danger{
+  color: red;
+}

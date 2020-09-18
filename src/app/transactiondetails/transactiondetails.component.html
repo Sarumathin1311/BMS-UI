@@ -1,0 +1,23 @@
+<div class="container">
+<h2> Your Transaction Details</h2>
+<table class="a">
+  <thead>
+      <tr>
+          <th>Fund ID</th>
+          <th>Fund Name</th>
+          <th>Amount</th>
+          <th>PAN No</th>
+        
+      </tr>
+  </thead>
+  <tbody>
+     <tr *ngFor =" let transactions  of transaction">
+         <td>{{transactions.fundId}}</td>
+         <td>{{transactions.fundName|titlecase}}</td>
+         <td>{{transactions.amount|number:'1.2-2'}}</td>
+         <td>{{username}}</td>
+        
+      </tr>
+ </tbody>
+</table>
+</div>

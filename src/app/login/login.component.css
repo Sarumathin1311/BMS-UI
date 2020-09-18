@@ -1,0 +1,49 @@
+.jumbotron{
+  margin-left: 50px;
+  margin-top: 0px;
+ 
+}
+
+.line{
+
+  width: 545px;
+  padding-bottom: 20px;
+  margin-left: 5px;
+  
+  
+box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+
+.signupdiv{
+  position: relative;
+ 
+  left: 50px;
+}
+
+.signupbtn{
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+  margin: auto;   
+  
+}
+.cards{
+  
+ background-color: rgb(224, 227, 228);
+}
+.card-body{
+  margin-top: 5px;
+
+}
+.card-header{
+  background-color: #5b70e4;
+  color: white;
+  margin-top: 0px;
+  padding: 10px;
+  font-size: 30px;
+}
+
+.display{
+  font-size: 20px;
+}

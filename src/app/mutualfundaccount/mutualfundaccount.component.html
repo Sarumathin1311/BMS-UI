@@ -1,0 +1,41 @@
+
+<div class="card">
+  <h3 class="card-header">Enter your Details</h3>
+
+      <form name="userForm" [formGroup]="userForm" (ngSubmit)="userForm.valid && onSubmit()" class="text-center border border-light p-5">
+        
+          <div class="col">
+              <input type="fundId" formControlName = "fundId" id = "fundId"  class="form-control" placeholder="Fund ID">
+              <div class="error" style="color:red" *ngIf="userForm.controls['fundId'].hasError('required') && userForm.controls['fundId'].touched">Fund ID is required</div>
+             
+            </div>&nbsp;
+          
+          <div class="col">
+              <input type="fundName" formControlName = "fundName" id = "fundName" class="form-control" placeholder="Fund Name">
+              <div class="error" style="color:red" *ngIf="userForm.controls['fundName'].hasError('required') && userForm.controls['fundName'].touched">FundName is required</div>
+          </div>&nbsp;
+         
+
+          <div class="col">
+              <input type="amount" formControlName = "amount"  id = "amount" class="form-control" placeholder="amount">
+              <div class="error" style="color:red" *ngIf="userForm.controls['amount'].hasError('required') && userForm.controls['amount'].touched">Amount is required</div>
+          </div>&nbsp;
+
+          <div class="col">
+              <input type="panNo" formControlName = "panNo" id = "panNo" class="form-control" placeholder="PAN No">
+              <div class="error" style="color:red" *ngIf="userForm.controls['panNo'].hasError('required') && userForm.controls['panNo'].touched">PAN No is required</div>
+          </div>&nbsp;	
+          <div class="col">
+            <input type="accountNo" formControlName = "accountNo" id = "accountNo"  class="form-control"  required maxlength="10" placeholder="Account No">
+            <div class="error" style="color:red" *ngIf="userForm.controls['accountNo'].hasError('required') && userForm.controls['accountNo'].touched">Account No is required</div>
+            <div class="error" style="color:red" *ngIf="userForm.controls['accountNo'].hasError('required maxlength') && userForm.controls['accountNo'].touched"></div>
+      
+
+          <div class="btn-group">  
+      <button class="btn btn-primary" type="submit">Submit</button></div>&nbsp;	
+        <div class="btn-group">
+        <a routerLink="/home/mutualfund/funddetails" routerLinkActive="active" class="btn btn-primary viewaccountbtn">ViewAccount</a>
+        </div><br><br>
+        <hr>
+<router-outlet></router-outlet>
+
